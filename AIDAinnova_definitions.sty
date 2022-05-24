@@ -1,0 +1,128 @@
+%============================================%
+% Useful definitions.
+%
+% Updated: 16.05.2022
+% Rickard Stroem (lars.rickard.stroem@cern.ch)
+%============================================%
+
+%% software package names
+\newcommand{\tmva}{\ac{TMVA}\xspace}
+\newcommand{\ROOT}{ROOT\xspace}
+\newcommand{\roofit}{RooFit\xspace}
+\newcommand{\geant}{\textsc{Geant4}\xspace}
+\newcommand{\stdhep}{\textsc{StdHep}\xspace}
+\newcommand{\pythia}{\textsc{PYTHIA}\xspace}
+\newcommand{\fastjet}{\textsc{FastJet}\xspace}
+
+%% GEANT physics lists
+\newcommand{\qgspbert}{\texttt{QGSP\_BERT}\xspace}
+\newcommand{\qgspberthp}{\texttt{QGSP\_BERT\_HP}\xspace}
+
+%% beam related symbols
+\newcommand\gamgam {\ensuremath{\PGg\PGg}\xspace}
+\newcommand\gghadrons {\ensuremath{\gamgam \to \mathrm{hadrons}}\xspace}
+\newcommand{\gghad}{\gghadrons}
+\newcommand\roots {\ensuremath{\sqrt{s}}\xspace}
+
+%% jet finding algorithms
+\newcommand{\kT}{\ensuremath{k_{t}}\xspace}
+
+%% physics overvables
+\newcommand{\pT}{\ensuremath{p_\text{T}}\xspace}
+\newcommand{\pTmiss}{\ensuremath{p_\text{T}^{miss}}\xspace}
+\newcommand{\mT}{\ensuremath{M_\text{T}}\xspace}
+\newcommand{\mTmiss}{\ensuremath{M_\text{T}^\text{miss}}\xspace}
+\newcommand{\mmiss}{\ensuremath{M^\text{miss}}\xspace}
+\newcommand{\rphi}{\ensuremath{r\phi}\xspace}
+\newcommand{\lagrange}{\ensuremath{{\cal L}}\xspace}
+\newcommand{\luminosity}{\ensuremath{{\cal L}}\xspace}
+\newcommand{\lumi}{\luminosity}
+\newcommand{\tanbeta} {\ensuremath{\tan \beta}\xspace}
+\newcommand{\omegachi} {\ensuremath{\Omega_{\chi} h^2}\xspace}
+\newcommand{\rmsn}{\ensuremath{\text{RMS}_{90}}\xspace}
+\newcommand{\dedx}{\ensuremath{\text{d}E/\text{d}x}\xspace}
+\newcommand{\mass}[1]{\ensuremath{M_{#1}}\xsapce}
+\newcommand{\br}[1]{\ensuremath{\text{BR}_{#1}}\xspace}
+
+%% luminosity units
+\newcommand{\abinv}{\ensuremath{\text{ab}^{-1}}\xspace}
+\newcommand{\fbinv}{\ensuremath{\text{fb}^{-1}}\xspace}
+\newcommand{\pbinv}{\ensuremath{\text{pb}^{-1}}\xspace}
+
+%% Detector parameters, radiation  length etc
+\newcommand{\xo}    {\ensuremath{\mathrm{X}_{0}}\xspace}
+\newcommand{\lambdaint}  {\ensuremath{\lambda_{\mathrm{I}}}\xspace}
+\newcommand{\lstar}    {\ensuremath{\mathrm{L}^{*}}\xspace}
+
+%% Units
+\newcommand{\degrees}{\ensuremath{^{\circ}}\xspace}
+\newcommand{\hitspermmbx}{\ensuremath{\text{Hits/mm}^{2}\text{/BX}}\xspace}
+\newcommand{\permmbx}{\ensuremath{\text{/mm}^{2}\text{/BX}}\xspace}
+\newcommand{\flux}{\ensuremath{\text{n_{eq}}/\text{cm}^{2}/\text{yr}}\xspace}
+\newcommand{\micron}{\ensuremath{\upmu\mathrm{m}}\xspace}
+\newcommand{\microsecond}{\ensuremath{\upmu\mathrm{s}}\xspace}
+\newcommand{\microwatt}{\ensuremath{\upmu\mathrm{W}}\xspace}
+
+%% text shortcuts
+\newcommand{\eg}{e.g.\xspace}
+\newcommand{\ie}{i.e.\xspace}
+\newcommand{\etc}{etc.\xspace}
+
+%% Fermion pairs
+\newcommand{\ee}{\ensuremath{\Pe\Pe}\xspace}       %ee
+\newcommand{\epem}{\ensuremath{\Pep\Pem}\xspace}   %e+e-
+\newcommand{\mpmm}{\ensuremath{\PGmp\PGmm}\xspace} %mu+mu-
+\newcommand{\mumu}{\ensuremath{\PGm\PGm}\xspace}   %mumu
+\newcommand{\tptm}{\ensuremath{\PGtp\PGtm}\xspace} %tau+tau-
+\newcommand{\bb}{\ensuremath{\PQb\PAQb}\xspace}
+\newcommand{\cc}{\ensuremath{\PQc\PAQc}\xspace}
+\newcommand{\ttbar}{\ensuremath{\PQt\PAQt}\xspace} 
+\newcommand{\qqbar}{\ensuremath{\PQq\PAQq}\xspace} 
+\newcommand{\uds}{\ensuremath{\PQu\PQd\PQs}\xspace} 
+\newcommand{\nuenuebar}{\ensuremath{\PGne\PAGne}\xspace} %nu_e nue_e
+\newcommand{\nunubar}{\ensuremath{\PGn\PAGn}\xspace}   %nu nu 
+
+\newcommand{\llll}{\ensuremath{\Plp\Plm\Plp\Plm}\xspace}
+\newcommand{\tb} {\ensuremath{\PQt\PQb}\xspace}
+\newcommand{\bbbb} {\ensuremath{\PQb\PAQb\PQb\PAQb}\xspace}
+\newcommand{\tbtb} {\ensuremath{\PQt\PAQb\PQb\PAQt}\xspace}
+\newcommand{\taunutau} {\ensuremath{\PGt\PGnGt}\xspace}
+\newcommand{\qqqq}{\ensuremath{\PQq\PAQq\PQq\PAQq}\xspace}
+
+\newcommand{\qqb} {\ensuremath{\PQq\PAQq\PQb}\xspace}
+\newcommand{\qqbbar} {\ensuremath{\PQq\PAQq\PAQb}\xspace}
+\newcommand{\lnb} {\ensuremath{\Pl\PAGn\PQb}\xspace}
+%% SM Physics
+\newcommand{\ww}{\ensuremath{\PWp\PWm}\xspace} %WW
+\newcommand{\zz}{\ensuremath{\PZ\PZ}\xspace} %ZZ
+\newcommand{\wwz}{\ensuremath{\PWp\PWm\PZ}\xspace} %WWZ
+\newcommand{\zzz}{\ensuremath{\PZ\PZ\PZ}\xspace} %ZZZ
+%% Higgs
+\newcommand{\zhsm} {\ensuremath{\PH\PZ}\xspace}  % HZ
+\newcommand{\zhl} {\ensuremath{\PSh\PZ}\xspace} %hZ SUSY
+\newcommand{\zhh} {\ensuremath{\PSH\PZ}\xspace}  %HZ SUSY
+\newcommand{\hA}{\ensuremath{\PSh\PSA}\xspace}  %hA SUSY
+\newcommand{\HA}{\ensuremath{\PSH\PSA}\xspace}  %hA SUSY
+\newcommand{\HpHm}{\ensuremath{\PSHp\PSHm}\xspace}  %hA SUSY
+\newcommand{\zhhsm}{\ensuremath{\PH\PH\PZ}\xspace}  % HHZ
+
+%% SUSY 
+\def\susy#1{\ensuremath{\tilde{\mathrm{#1}}}}%             
+\def\chargino  #1{\ensuremath{\susy{\upchi}_1^{#1}}}
+\def\charginotwo  #1{\ensuremath{\susy{\upchi}_2^{#1}}}
+\def\charginos  #1{\ensuremath{\susy{\upchi}_{1,2}^{#1}}}
+\def\charginogen  #1#2{\ensuremath{\susy{\upchi}_{#2}^{#1}}} % to avoid clash with JJ defs, not so nice ...
+\def\neutralino#1{\ensuremath{\susy{\upchi}_{#1}^0}}
+\def\nene #1#2{\ensuremath{\neutralino{#1}\neutralino{#2}}}  %neutralino_i, neutralino_j
+\def\chch #1#2{\ensuremath{\susy{\upchi}_{#1}^{+}\susy{\upchi}_{#2}^{-}}}  %chargino_i,chargino_j
+\def\smusmu #1{\ensuremath{\PSGm^{+}_{\mathrm{#1}} \PSGm^{-}_{\mathrm{#1}}}}
+\def\selsel #1{\ensuremath{\PSe^{+}_{\mathrm{#1}} \PSe^{-}_{\mathrm{#1}}}}
+\def\snuesnue {\ensuremath{\PSGne\PSGne}}
+
+\def\stopstop {\ensuremath{\PSQtDo\PSQtDo}\xspace} %stop %stop
+\def\staustau {\ensuremath{\PSGt\PSGt}\xspace} %stau %stau
+\def\sqsq #1 {\ensuremath{\PSQ_{\text{#1}}\PSQ_{\stext{#1}}}\xspace} %stau %stau
+
+%%Other BSM
+\def\Zprime {\ensuremath{\PZpr}\xspace}
+\def\Zprimestar {\ensuremath{\PZpr^{\ast}}\xspace}

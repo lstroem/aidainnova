@@ -1,0 +1,105 @@
+%============================================%
+% Official template for AIDAinnova documents
+% to be used for publications using another
+% style file than the AIDAinnova one
+% For example journal papers, proceedings, etc. 
+%
+% Updated: 16.05.2022
+% Rickard Stroem (lars.rickard.stroem@cern.ch)
+%
+%============================================%
+
+\documentclass[11pt,a4paper]{scrartcl}
+
+% Defines default style and includes several useful packages
+\usepackage{AIDAinnova}
+
+% Useful macros for writing documents
+\usepackage{AIDAinnova_definitions}
+
+% Add your packages here
+%\usepackage{MyPackage}
+
+%============================================%
+% Set up the title page
+%============================================%
+
+% Set the title of the note
+\title{AIDAinnova Template}
+
+% LICENCE
+% Note that all documents (except for drafts) by default will be covered by the open access license CC-BY-4.0
+% Although the majority of the journals of interest for the high-energy physics community today publish under open access there are still some exceptions. 
+% It is the responsibility of the author to inform the publications committee about the intended submission to a non open access journal. 
+% The committee will then take the appropriate steps to ensure that the publication is treated according to the rules.
+\nolicence %Comment this line to add the licence comment (not shown for drafts automatically)
+
+% Set the document number
+% IMPORTANT! All documents will initally belong to the draft category
+% Find out what your draft's number is by looking at CDS
+%\notitlestamp % Uncomment this line to remove the stamp with the document number
+\aidainnovadraft{20xx}{xxx}  % Draft
+%\aidainnovapub{20xx}{xxx}  % Journal articles
+%\aidainnovaconf{20xx}{xxx}  % Conference proceedings
+%\aidainnovanote{20xx}{xxx}  % Public note
+%\aidainnovaint{20xx}{xxx}  % Internal note
+
+% Set the publication date
+\date{\today}
+%\date{\formatdate{26}{7}{2017}}
+
+% Define the authors and their institutes, they will appear exactly in the order as they are added
+% Footnotes can be added using the \thanks command
+\addauthor{Initials.~Name}{\institute{1}\hcomma\institute{2}}
+\addauthor{Initials.~Name}{\institute{3}\hcomma\thanks{Also at some other place}}
+\addauthor{Initials.~Name}{\institute{1}\hcomma\editor{corresponding.author@cern.ch}}
+
+\addinstitute{1}{CERN, Switzerland}
+\addinstitute{2}{University, Country}
+\addinstitute{3}{Other University, Country}
+
+% Define an abstract for the note 
+\abstract{\lipsum[1]}
+
+% Add comments to the title page (optional)
+\titlecomment{This project has received funding from the European Union's Horizon 2020 Research and Innovation programme under Grant Agreement no. 101004761}
+
+%============================================%
+% Search path for images
+%============================================%
+
+\graphicspath{ {./logos/}{./figures/} }
+
+%============================================%
+% Options
+%============================================%
+
+% Uncomment this line for a draft version. Adds a watermark and a timestamp
+\draftdocument
+
+% Uncomment this line to change all link colours to black
+%\nocolourlinks
+
+%============================================%
+% Bibliography
+%============================================%
+
+% define the list of bibliography data files
+\addbibresource{./bibliography/bibliography.bib}
+
+%============================================%
+% Start of the actual document
+%============================================%
+
+\begin{document}
+
+% generates the title page
+\titlepage
+
+% include source for sections
+\input{./include/guide.tex}
+
+% add references
+\printbibliography[title=References]
+
+\end{document}
